@@ -1,0 +1,31 @@
+<div id="header">
+  <div id="latestversion" class="block"><a href="/{{ lang }}/">{% include tr.html s="latest version is" %} {{ site.version }}</a></div>
+  <div id="downloadbar" class="block">
+    <div id="release" class="block">
+      <div class="download linux">
+          <a href="https://github.com/Stellarium/stellarium/releases/download/v{{ site.version }}/stellarium-{{ site.version }}.tar.gz">Linux<span>{% include tr.html s="source" %}</span></a>
+      </div>
+      <div class="download snap">
+          <a href="https://snapcraft.io/stellarium-daily">Linux<span>snap</span></a>
+      </div>
+      <div class="download appimage">
+          <a href="https://github.com/Stellarium/stellarium/releases/download/v{{ site.version }}/stellarium-{{ site.version }}-x86_64.AppImage">Linux<span>{% include tr.html s="64 bit" %}; AppImage</span></a>
+      </div>
+      <div class="download macosx">
+          <a href="https://github.com/Stellarium/stellarium/releases/download/v{{ site.version }}/Stellarium-{{ site.version }}.zip">Mac OS X<span>10.12+; {% include tr.html s="64 bit" %}</span></a>
+      </div>
+      <div class="download windows">
+          <a href="https://github.com/Stellarium/stellarium/releases/download/v{{ site.version }}/stellarium-{{ site.version }}-win32.exe">Windows<span>{% include tr.html s="32 bit" %}</span></a>
+      </div>
+      <div class="download windows">
+          <a href="https://github.com/Stellarium/stellarium/releases/download/v{{ site.version }}/stellarium-{{ site.version }}-win64.exe">Windows<span>{% include tr.html s="64 bit" %}</span></a>
+      </div>
+      <div class="download swe">
+          <a href="https://stellarium-web.org/">Test Web</a>
+      </div>
+      <div class="download pdf">
+          <a href="https://github.com/Stellarium/stellarium/releases/download/v{{ site.guide_base_version }}/stellarium_user_guide-{{ site.guide_version }}.pdf"><span>{% include tr.html s="User Guide" %}</span> <span>{{ site.guide_version }}</span></a>
+      </div>
+    </div>
+  </div>
+</div>

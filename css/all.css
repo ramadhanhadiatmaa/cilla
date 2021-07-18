@@ -1,0 +1,512 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	text-align: center;
+	font-size: 16px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color: #fff;
+}
+
+
+a {
+	color: #818895;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+p {
+	font-size: 0.7em;
+	line-height: 1.6em;
+	margin-bottom: 1em;
+}
+
+h2 {
+	border-bottom: solid 1px #818895;
+	font-size: 1.4em;
+	font-weight: normal;
+	margin-top: 1em;
+	line-height: 1.4em;
+}
+
+h3 {
+	font-size: 0.7em;
+	font-weight: normal;
+	margin-bottom: -1.3em;
+}
+
+
+#wrapper {
+	width: 900px;
+	margin: 0 auto;
+}
+
+#langbar {
+	padding: 3px;
+	height: 40px;
+	font-size: 11px;
+}
+
+#langbar select {
+	font-size: 11px;
+}
+
+
+#header {
+	height: 120px;
+}
+
+#downloadbar {
+	width: 600px;
+	color: #2b2c3e;
+}
+
+#downloadbar a {
+	color: #2b2c3e;
+}
+
+.download a {
+	display: block;
+	width: 65px;
+	height: 70px;
+	font-size: 12px;
+	margin: 2px;
+	padding-top: 45px;
+	text-align: center;
+}
+
+.download span {
+	display: block;
+	font-size: 10px;
+}
+
+.guide {
+	margin-left: 20px;
+	text-align: center;
+}
+
+#release {
+	width: 600px; 
+}
+
+#additional {
+	width: 80px;
+}
+
+
+#latestversion {
+	height: 80px;
+	line-height: 115px;
+	width: 325px;
+}
+
+#latestversion a {
+	color: #2b2c3e;
+	text-decoration: none;
+	display: block;
+}
+
+#home {
+	clear: both;
+	height: 250px;
+}
+
+.block {
+	display: table-cell;
+	vertical-align: top;
+}
+
+#home-describe {
+	width: 300px;
+}
+
+.post p {
+  color: #fff;
+  font-size: 18px;
+  padding: 8px;
+}
+
+.post h1 {
+  padding: 20px;
+}
+
+.post ul {
+  padding-left: 70px;
+}
+
+.post {
+  padding-bottom: 20px;
+}
+
+#home-describe p, 
+#sponsors-describe p, 
+#apidocs-describe p {
+	margin: 0;
+	padding: 8px;
+	color: #000;
+	font-size: 14px;
+}
+
+#sponsors-describe p, 
+#apidocs-describe p {
+	text-align: center;
+	font-size: 14pt;
+	padding: 2em;
+}
+
+#home-media {
+	border-bottom:1px solid #000;
+}
+
+#home-media a, 
+#home-media a:link {
+	color:#fff;
+	text-decoration:none;
+}
+
+#home-media, 
+#home-media div.slide-item {
+	width: 600px;
+	height: 250px;
+	overflow: hidden;
+	position: relative;
+}
+
+#home-media div.slide-item {
+	display:none;
+	position:absolute;
+}
+
+#home-media div.slide-item.first {
+	display:block;
+	z-index:1;
+}
+
+div.slide-desc {
+	display:none;
+}
+
+div.slide-item h2 {
+	color: #FFFFFF;
+	display: none;
+	font-size: 2em;
+	margin: 10px;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	z-index: 0;
+}
+
+#thumbs img {
+	border:0;
+}
+
+#thumbs ul {
+	list-style:none;
+	overflow:hidden;
+	padding:0;
+	position:absolute;
+	width:300px;
+}
+
+#thumbs li a, 
+#thumbs li a:link {
+	border:0;
+}
+
+#thumbs li img {
+	border: 1px solid #FFF;
+}
+
+#thumbs li a.current img {
+	border: 3px solid #FFF;
+	margin: -1px 0 0 0;
+}
+
+#thumbs {
+	position: absolute;
+	z-index: 3;
+	width: 592px;
+	height: auto!important;
+	height: 80px;
+	min-height: 80px;
+	bottom: 0;
+	overflow: visible;
+}
+
+#description p {
+	clear:both;
+	color:#FFFFFF;
+	font-size: 12px;
+	margin:0;
+	padding:5px;
+}
+
+#description {
+	width:295px;
+	padding: 8px 8px 8px 3px;
+	height: auto!important;
+	height: 70px;
+	min-height: 70px;
+	overflow: visible;
+	position: relative;
+	opacity: 1;
+}
+
+#description a, 
+#description a:link {
+	color:#FFF;
+	text-decoration:none;
+}
+
+a.read-more {
+	display: block;
+	position: absolute;
+	margin: 0 15px 0 0;
+	bottom: 5px;
+	font-weight: lighter;
+	font-size: 14px;
+}
+
+
+#content {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+#content ol {
+	font-size: 0.7em;
+	line-height: 1.6em;
+}
+
+#content .block {
+	padding: 0 0 10px 0;
+}
+
+#showcase {
+	margin: 0 auto;
+	text-align: center;
+	width: 48em;
+	position: relative;
+	top: 1.9em;
+}
+
+.thumb {
+	border: none;
+	margin: 0.4em;
+}
+
+#fullsize {
+	height: 42em; 
+	text-align:center;
+	border-top: 1px dotted #000; 
+}
+
+#fullsize p {
+	padding-top: 2em;
+	padding-bottom: 1em;
+}
+
+#fullsize img {
+	margin: 0 auto;
+}
+
+#footer {
+	padding: 10px;
+	text-align: right;
+}
+
+div#features, 
+div#news, 
+div#development, 
+div#community, 
+div#stelsponsors, 
+div#friends, 
+div#collaborate, 
+div#requirements,
+div#apidoc, 
+div#apipluginsdoc, 
+div#scripts-info,
+div#landscapes-intro,
+div#pkgdiff {
+	width: 300px;
+}
+
+div#scripts-data,
+div#landscapes-data {
+	width: 600px;
+}
+
+#community li, 
+#stelsponsors li, 
+#apidoc li, 
+#apipluginsdoc li, 
+#pkgdiff li, 
+#friends li, 
+.smalllist li {
+	font-size: 0.7em;
+	line-height: 1.6em;
+}
+
+.largelist {
+	font-size: 1em;
+	line-height: 1.4em;
+	font-weight: bold;
+}
+
+.largelist li {
+	list-style-image: url(../img/nd/largelist.gif);
+	list-style-type: none;
+}
+
+.largelist a:hover {
+	text-decoration: underline;
+	color: #FFE67D;
+}
+
+.sublist {
+	font-size: 0.7em;
+	line-height: 1.6em;
+	font-weight: bold;
+}
+
+.sublist li {
+	list-style-image: url(../img/nd/download.png);
+	list-style-type: none;
+}
+
+.sublist a:hover {
+	text-decoration: underline;
+	color: #FFE67D;
+}
+
+#news li {
+	font-size: 0.7em;
+	line-height: 1.6em;
+}
+
+span.newsdate, 
+span.newstitle {
+	display: block;
+	font-size: 0.7em;
+}
+
+.newstitle {
+	font-weight:bold;
+	font-size:1.1em;
+}
+
+/* hack for idiotic processed long links by webkit */
+.newsitem p {
+	width: 278px;
+}
+
+#xmllink,
+#xmllink a, 
+#xmllink a:hover {
+	border:1px solid;
+	border-color:#FC9 #630 #330 #F96;
+	padding:0 3px;
+	font:bold 10px verdana,sans-serif;
+	color:#FFFFFF;
+	background:#F60;
+	text-decoration:none;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.newsdate {
+	font-weight: bold;
+	color: #131417;
+}
+
+#langlist {
+	display: none;
+}
+
+#landscapes-data p, .stdlist {
+	font-size: 13px;
+	line-height: 1.4em;
+}
+
+#landscapes-data h3 {
+	border-bottom: dotted 1px #818895;
+	font-size: 1em;
+	font-weight: normal;
+	margin: 1em;
+	line-height: 1.6em;
+}
+
+.image-right {
+	float: right;
+	margin: 5px;
+}
+
+.image-center {
+	margin: 5px auto;
+	display: block;
+}
+
+.guidetable {
+	background-color: transparent;
+	border: 3px double #aaa;
+	border-collapse: collapse;
+}
+
+.guidetable th {
+	border-right: 1px dotted #aaa;
+	padding: 5px;
+}
+
+.guidetable th.rbn {
+	border-right: 0;
+	padding: 5px;
+}
+
+.guidetable tr {
+	vertical-align: text-top;
+}
+
+.guidetable td {
+	border-top: 1px solid #aaa;
+	border-right: 1px dotted #aaa;
+	padding: 5px;
+}
+
+.guidetable td.rbn {
+	border-top: 1px solid #aaa;
+	padding: 5px;
+}
+
+.guidetable tr.deprecated td, .guidetable td.deprecated {
+	background-color: #ececec;
+}
+
+.guidetable tr.comingsoon td, .guidetable td.comingsoon {
+	background-color: #ffffcc;
+}
+
+.guidetable tr.developer td, .guidetable td.developer {
+	background-color: #ffcc66;
+}
+
+.guidetable tr.section td, .guidetable td.section {
+	border-top: 1px solid #aaa;
+	background-color: #ffffcc;
+	text-align: center;
+}
+
+.guidetable, .guidetable td p, .guidetable p {
+	font-size: 13px;
+	line-height: 1.4em;
+}
+
+.guidetable td p, .guidetable p {
+	margin: 0;
+}

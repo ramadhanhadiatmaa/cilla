@@ -1,0 +1,46 @@
+---
+layout: default
+title: Stellarium Scripts
+---
+{% include i18n.html %}
+{% include home.html %}
+
+<div id="content">
+  <div id="scripts-info" class="block">
+    <h2>{% include tr.html s="introduction" %}</h2>
+    <p>{% include tr.html s="As of version 0.10.1, Stellarium uses the QtScript engine. The previously used StratoScript is no longer available. Even at version 0.16, Stellarium's scripting capabilities and the API change as development continues. Qt5.8 has declared the QtScript module deprecated, so the API may change again a bit. It will remain available in later Qt5 versions, though." %}</p>
+
+    <h2>{% include tr.html s="installing scripts" %}</h2>
+    <p>{% include tr.html s="To install a script copy the script file (.ssc extension), and any texture files it uses to the scripts sub-directory of your User Data Directory. Instructions with many of these community-donated scripts may date back to older versions of Stellarium, and the instructions provided with the script may be out of date." %}</p>
+
+    <h2>{% include tr.html s="api documentation" %}</h2>
+    <p>{% include tr.html s="After building Stellarium itself from the Git code, do 'make apidoc' (you need Doxygen installed). This will create a directory: .../stellarium/builds/doc/html which contains the API documentation in HTML format or you follow this link <a href='/doc/head/'>Doxygen-API</a>" %}</p>
+  </div>
+
+  <div id="scripts-data" class="block">
+    <h2>{% include tr.html s="scripts" %}</h2>
+
+    {% for item in site.scripts %}
+    <table class="guidetable" width="590" style="margin: 5px 0;">
+    <tr>
+      <td rowspan="4" width="200" align="center" valign="top">{% if item.image_url %}<img src="{{ item.image_url }}">{% else %}Screenshot not available{% endif %}</td>
+      <td colspan="3"><a href="{{ item.script_url }}">{{ item.title }}</a></td>
+    </tr>
+    <tr>
+      <td width="210">{{ item.author }}</td>
+      <td align="center" width="130">{% if item.license %}{{ item.license }}{% else %}N/A{% endif %}</td>
+      <td align="center" width="50">{% if item.version %}{{ item.version }}{% else %}N/A{% endif %}</td>
+    </tr>
+    <tr>
+      <td colspan="3">{{ item.content }}</td>
+    </tr>
+    <tr>
+      <td>Category: {{ item.categories }}</td>
+      <td align="center" width="100">{% if item.language %}{{ item.language }}{% else %}English{% endif %}</td>
+      <td align="center" width="50">{% if item.compat %}{{ item.compat }}{% else %}N/A{% endif %}</td>
+    </tr>
+    </table>
+    {% endfor %}
+
+  </div>
+</div>
